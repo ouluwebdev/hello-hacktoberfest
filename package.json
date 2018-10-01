@@ -1,0 +1,28 @@
+{
+  "name": "hello-hacktoberfest",
+  "version": "0.1.0",
+  "description": "Hello, Hacktoberfest! A Hello, World! to get started with open source",
+  "author": "Thibaud Colas",
+  "license": "CC0",
+  "homepage": "https://github.com/ouluwebdev/hello-hacktoberfest",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouluwebdev/hello-hacktoberfest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ouluwebdev/hello-hacktoberfest/issues"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "getting started",
+    "hello-world"
+  ],
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "lint": "prettier --list-different '**/*.{md,css,js,json,yaml,yml}'",
+    "format": "prettier --write '**/*.{md,css,js,json,yaml,yml}'",
+    "test:ci": "npm run lint -s"
+  }
+}
