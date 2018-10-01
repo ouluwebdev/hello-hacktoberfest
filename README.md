@@ -1,4 +1,4 @@
-# Hello, Hacktoberfest!
+# Hello, Hacktoberfest! [![Build Status](https://travis-ci.com/ouluwebdev/hello-hacktoberfest.svg?branch=master)](https://travis-ci.com/ouluwebdev/hello-hacktoberfest)
 
 > A [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) to get started with open source.
 
