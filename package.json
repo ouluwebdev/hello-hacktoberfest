@@ -38,5 +38,9 @@
     "format": "prettier --write '**/*.{md,css,js,json,yaml,yml}'",
     "build": "node build.js",
     "test:ci": "npm run lint -s"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "prismjs": "^1.15.0"
   }
 }
