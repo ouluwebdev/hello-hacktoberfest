@@ -4,7 +4,7 @@
   "description": "Hello, Hacktoberfest! A Hello, World! to get started with open source",
   "author": "Thibaud Colas",
   "license": "CC0",
-  "homepage": "https://github.com/ouluwebdev/hello-hacktoberfest",
+  "homepage": "https://ouluwebdev.github.io/hello-hacktoberfest",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ouluwebdev/hello-hacktoberfest.git"

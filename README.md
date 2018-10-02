@@ -1,4 +1,4 @@
-# Hello, Hacktoberfest!
+# [Hello, Hacktoberfest!](https://ouluwebdev.github.io/hello-hacktoberfest) [![Build Status](https://travis-ci.com/ouluwebdev/hello-hacktoberfest.svg?branch=master)](https://travis-ci.com/ouluwebdev/hello-hacktoberfest)
 
 ```swift
 ╦ ╦┌─┐┬  ┬  ┌─┐

@@ -6,9 +6,21 @@ cache:
 install:
   - npm install
 script:
-  - npm run test:ci
+  - cp -R public build
 branches:
   except:
     - gh-pages
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    local_dir: build
+    github_token: "$PAGES_GITHUB_API_TOKEN"
+    on:
+      branch: master
 notifications:
   email: false
+env:
+  global:
+    # Permissions: public_repo
+    # travis encrypt --pro PAGES_GITHUB_API_TOKEN=<value>
+    - secure: "U6u5+YZtXC7kOwSTqurQaFjr+r2RNiQEvFD51iylfb1f6q9cAvcdTtB+pLC95/fudVpiA78pCQhi6zXHjWem+ugimHIWojv7ybS4NPySYkluCyf2+sS+MmhJNkxA9gjoLmxB+C/EoAUy6aPuF2NLmrH0WltdgRrJzyqrjSr8Au59O+zdmGZJUO4uYFB04tAQGiSKiBz9SsvcmbVug4JxGMtwU3ef969g7UO5rTKRAnee5AdpmxjNXk/cakv57b+DqRiZDve29ePM4A9rxzsDTO5BTAAqbDeWQPI5bucfGAnSedCYFv6sy3rp1ud0qLGEJkQnmHD8+PcK3ltueRvd+0YyYtdltL1W85akE8Jx1bup32s6qZRlPXUaXj0TV5Vu7yF6wSP7R9x/nRsYy4M3cxTjG/15/UZ9VEnWZzyHUNxm4FmihSXedPIvgwhaCBmFWY/8+ksOQkEB14IavaEQH6tbEzVFsmi8xcAwr9EdbKQgvBqxRH0ciihPQcrBo0JdBVYAlgwz21a8F8+tKXmCZ3Abe27RlXhdy2NiqFmc0PvOHAY+Ey1j6WH0E6gAD2fkdXVToMzIXFJa6Pu7OoUh0IbIGaOcpn9rilKSDOBZQu1/THRgrkKRNQwRGPjH3uL1f2sadTx32buYlnraOFDZJd47HaZAMI/YRHUXZeCDmxk="
