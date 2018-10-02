@@ -30,11 +30,13 @@
     "proseWrap": "preserve"
   },
   "devDependencies": {
+    "fs-extra": "^7.0.0",
     "prettier": "^1.14.2"
   },
   "scripts": {
     "lint": "prettier --list-different '**/*.{md,css,js,json,yaml,yml}'",
     "format": "prettier --write '**/*.{md,css,js,json,yaml,yml}'",
+    "build": "node build.js",
     "test:ci": "npm run lint -s"
   }
 }
