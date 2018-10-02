@@ -84,6 +84,8 @@ eggs
 parts
 lib64
 .sass-cache
+*.cmi
+*.cmo
 
 # -------------------------------------------------
 # Your own project's ignores
