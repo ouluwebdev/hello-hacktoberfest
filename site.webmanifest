@@ -1,0 +1,19 @@
+{
+  "name": "Hello, Hacktoberfest!",
+  "short_name": "Hello!",
+  "icons": [
+    {
+      "src": "/hello-hacktoberfest/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/hello-hacktoberfest/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff9a56",
+  "background_color": "#ff9a56",
+  "display": "standalone"
+}
